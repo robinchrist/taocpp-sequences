@@ -1,8 +1,8 @@
 // Copyright (c) 2015-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_AT_INDEX_HPP
-#define TAO_SEQ_AT_INDEX_HPP
+#ifndef TAO_SEQUENCES_AT_INDEX_HPP
+#define TAO_SEQUENCES_AT_INDEX_HPP
 
 #include <cstddef>
 
@@ -13,7 +13,7 @@ namespace tao
 {
    namespace sequence
    {
-#ifdef TAO_SEQ_TYPE_PACK_ELEMENT
+#ifdef TAO_SEQUENCES_TYPE_PACK_ELEMENT
 
       template< std::size_t I, typename... Ts >
       using at_index_t = __type_pack_element< I, Ts... >;

@@ -1,8 +1,8 @@
 // Copyright (c) 2019-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_DIFFERENCE_HPP
-#define TAO_SEQ_DIFFERENCE_HPP
+#ifndef TAO_SEQUENCES_DIFFERENCE_HPP
+#define TAO_SEQUENCES_DIFFERENCE_HPP
 
 #include <type_traits>
 

@@ -1,8 +1,8 @@
 // Copyright (c) 2015-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_INCLUSIVE_SCAN_HPP
-#define TAO_SEQ_INCLUSIVE_SCAN_HPP
+#ifndef TAO_SEQUENCES_INCLUSIVE_SCAN_HPP
+#define TAO_SEQUENCES_INCLUSIVE_SCAN_HPP
 
 #include "exclusive_scan.hpp"
 #include "integer_sequence.hpp"

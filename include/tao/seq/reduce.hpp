@@ -1,12 +1,12 @@
 // Copyright (c) 2019-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_REDUCE_HPP
-#define TAO_SEQ_REDUCE_HPP
+#ifndef TAO_SEQUENCES_REDUCE_HPP
+#define TAO_SEQUENCES_REDUCE_HPP
 
 #include "config.hpp"
 
-#ifdef TAO_SEQ_FOLD_EXPRESSIONS
+#ifdef TAO_SEQUENCES_FOLD_EXPRESSIONS
 
 #include "accumulate.hpp"
 
@@ -24,7 +24,7 @@ namespace tao
 {
    namespace sequence
    {
-#ifdef TAO_SEQ_FOLD_EXPRESSIONS
+#ifdef TAO_SEQUENCES_FOLD_EXPRESSIONS
 
       template< typename OP, typename T, T... Ns >
       using reduce = accumulate< OP, T, Ns... >;

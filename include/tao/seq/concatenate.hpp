@@ -1,8 +1,8 @@
 // Copyright (c) 2015-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_CONCATENATE_HPP
-#define TAO_SEQ_CONCATENATE_HPP
+#ifndef TAO_SEQUENCES_CONCATENATE_HPP
+#define TAO_SEQUENCES_CONCATENATE_HPP
 
 #include <type_traits>
 
@@ -13,7 +13,7 @@ namespace tao
 {
    namespace sequence
    {
-#ifdef TAO_SEQ_FOLD_EXPRESSIONS
+#ifdef TAO_SEQUENCES_FOLD_EXPRESSIONS
 
       namespace impl
       {

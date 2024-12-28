@@ -1,8 +1,8 @@
 // Copyright (c) 2015-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_MAKE_INTEGER_SEQUENCE_HPP
-#define TAO_SEQ_MAKE_INTEGER_SEQUENCE_HPP
+#ifndef TAO_SEQUENCES_MAKE_INTEGER_SEQUENCE_HPP
+#define TAO_SEQUENCES_MAKE_INTEGER_SEQUENCE_HPP
 
 #include <cstddef>
 #include <utility>
@@ -14,7 +14,7 @@ namespace tao
 {
    namespace sequence
    {
-#ifdef TAO_SEQ_USE_STD_MAKE_INTEGER_SEQUENCE
+#ifdef TAO_SEQUENCES_USE_STD_MAKE_INTEGER_SEQUENCE
 
       using std::index_sequence_for;
       using std::make_index_sequence;
@@ -65,7 +65,18 @@ namespace tao
          struct memoize_sequence
          {
             static_assert( N < T( 1 << 20 ), "N too large" );
-            using type = typename generate_sequence< false, false >::template f< T, ( N < T( 1 << 1 ) ) ? T( 1 << 1 ) : ( N < T( 1 << 2 ) ) ? T( 1 << 2 ) : ( N < T( 1 << 3 ) ) ? T( 1 << 3 ) : ( N < T( 1 << 4 ) ) ? T( 1 << 4 ) : ( N < T( 1 << 5 ) ) ? T( 1 << 5 ) : ( N < T( 1 << 6 ) ) ? T( 1 << 6 ) : ( N < T( 1 << 7 ) ) ? T( 1 << 7 ) : ( N < T( 1 << 8 ) ) ? T( 1 << 8 ) : ( N < T( 1 << 9 ) ) ? T( 1 << 9 ) : ( N < T( 1 << 10 ) ) ? T( 1 << 10 ) : T( 1 << 20 ), N, 0 >;
+            using type = typename generate_sequence< false, false >::template f< T, ( N < T( 1 << 1 ) ) ? T( 1 << 1 ) : ( N < T( 1 << 2 ) ) ? T( 1 << 2 ) :
+                                                                                                                     ( N < T( 1 << 3 ) )    ? T( 1 << 3 ) :
+                                                                                                                     ( N < T( 1 << 4 ) )    ? T( 1 << 4 ) :
+                                                                                                                     ( N < T( 1 << 5 ) )    ? T( 1 << 5 ) :
+                                                                                                                     ( N < T( 1 << 6 ) )    ? T( 1 << 6 ) :
+                                                                                                                     ( N < T( 1 << 7 ) )    ? T( 1 << 7 ) :
+                                                                                                                     ( N < T( 1 << 8 ) )    ? T( 1 << 8 ) :
+                                                                                                                     ( N < T( 1 << 9 ) )    ? T( 1 << 9 ) :
+                                                                                                                     ( N < T( 1 << 10 ) )   ? T( 1 << 10 ) :
+                                                                                                                                              T( 1 << 20 ),
+                                                                                 N,
+                                                                                 0 >;
          };
 
       }  // namespace impl

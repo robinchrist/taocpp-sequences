@@ -1,8 +1,8 @@
 // Copyright (c) 2019-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_CONTRIB_SORT_INDEX_HPP
-#define TAO_SEQ_CONTRIB_SORT_INDEX_HPP
+#ifndef TAO_SEQUENCES_CONTRIB_SORT_INDEX_HPP
+#define TAO_SEQUENCES_CONTRIB_SORT_INDEX_HPP
 
 #include "../sequence_helper.hpp"
 #include "../sort.hpp"

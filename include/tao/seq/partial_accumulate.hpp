@@ -1,8 +1,8 @@
 // Copyright (c) 2019-2020 Daniel Frey
 // Please see LICENSE for license or visit https://github.com/taocpp/sequences/
 
-#ifndef TAO_SEQ_PARTIAL_ACCUMULATE_HPP
-#define TAO_SEQ_PARTIAL_ACCUMULATE_HPP
+#ifndef TAO_SEQUENCES_PARTIAL_ACCUMULATE_HPP
+#define TAO_SEQUENCES_PARTIAL_ACCUMULATE_HPP
 
 #include <cstddef>
 
